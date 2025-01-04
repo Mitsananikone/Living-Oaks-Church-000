@@ -3,9 +3,9 @@ import React, { useEffect, useState, useRef } from "react";
 
 function Resources() {
   return (
-    <flexCenter>
+    <flexcenter>
       <h1>Resources</h1>
-    </flexCenter>
+    </flexcenter>
   );
 }
 

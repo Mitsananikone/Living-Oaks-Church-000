@@ -3,9 +3,9 @@ import React, { useEffect, useState, useRef } from "react";
 
 function Join() {
   return (
-    <flexCenter>
+    <flexcenter>
       <h1>Join Us</h1>
-    </flexCenter>
+    </flexcenter>
   );
 }
 

@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 
 
-function MeetThePerrins() {
+function HomePage() {
   return (
     <flexcenter>
-      <h1>Meet The Perrins</h1>
+      <h1>Home Page</h1>
     </flexcenter>
   );
 }
 
-export default MeetThePerrins;
+export default HomePage;

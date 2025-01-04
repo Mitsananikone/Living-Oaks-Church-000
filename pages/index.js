@@ -1,4 +1,4 @@
- import HomePage from '@/pages/home/homePage';
+ import HomePage from '@/pages/home/homepage';
 // import LandingPopup from '@/components/landingPopup/landingPopup';
 // import ContactForm from '@/components/contactForm/contactForm';
 

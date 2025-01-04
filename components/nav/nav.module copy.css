@@ -1,0 +1,132 @@
+.nav {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 100;
+     overflow: hidden;
+     background-color: transparent !important;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.navContainer>div {
+    display: flex;
+}
+
+.navItem {
+    display: inline-flex;
+    font-size: large;
+    /* line-height: 1.75rem; */
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    height: 100%;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.navItem:hover {
+    color: gold;
+    transition: 0.5s ease;
+}
+
+.navItemHamburger {
+    padding-right: 20px;
+    position: fixed;
+    overflow: visible;
+    display: flex;
+    padding-right: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* Right aligns the items */
+    box-sizing: border-box;
+    height: min-content;
+    /* position: absolute; */
+    top: 50px;
+    left: 0;
+    right: 0;
+    transition: transform 2s ease-out;
+    z-index: 999999;
+    opacity: 1;
+
+}
+
+
+.hamburger {
+    display: flex;
+    padding-left: 32px;
+    align-items: middle;
+    justify-content: space-between;
+    text-align: right;
+    display: none;
+    width: 80vw;
+}
+
+.hamburgerButton {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transform: scale(0.8);
+    z-index: 30;
+}
+
+.hamburgerButton:hover div {
+    background: transparent;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: #696969;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    height: auto;
+    line-height: 2;
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+    transform: translateX(0);
+    opacity: 0;
+    text-decoration: none;
+    /* transition: opacity 0.3s, transform 0.3s; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburgerButton .navContainer>div {
+    display: none;
+    /* Hide the regular menu items on medium screen */
+}
+
+.hamburgerButton .navContainer>button {
+    display: block;
+    /* Show the hamburger button on medium screen */
+}
