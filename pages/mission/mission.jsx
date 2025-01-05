@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
+import Parallelogram from "@/components/parallelogram/parallelogram";
 
-
-function Mission() {
+function HomePage() {
   return (
     <flexcenter>
-      <h1>Mission</h1>
+     
+      <Parallelogram width="300px" height="150px" color="#897349">
+      <h1>Our Mission</h1>
+      </Parallelogram>
     </flexcenter>
   );
 }
 
-export default Mission;
+export default HomePage;

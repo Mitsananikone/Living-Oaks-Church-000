@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
+import Parallelogram from "@/components/parallelogram/parallelogram";
 
-
-function Contact() {
+function HomePage() {
   return (
     <flexcenter>
+     
+      <Parallelogram width="300px" height="150px" color="#897349">
       <h1>Contact Us</h1>
+      </Parallelogram>
     </flexcenter>
   );
 }
 
-export default Contact;
+export default HomePage;

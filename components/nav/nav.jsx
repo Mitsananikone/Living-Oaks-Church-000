@@ -19,7 +19,7 @@ const Navbar = () => {
       if (idleTimeout.current) {
         clearTimeout(idleTimeout.current);
       }
-      idleTimeout.current = setTimeout(() => setShowNav(false), 5000000000);
+      idleTimeout.current = setTimeout(() => setShowNav(false), 8000000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -57,14 +57,21 @@ const Navbar = () => {
         <div className={styles.line}></div>
       </div>
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
-        {["Meet the Perrins", "Our Mission", "The Plan", "Resources", "Join Us", "Contact Us"].map(
-          (section, index) => (
-            <li key={index} onClick={() => handleNavClick(section)}>
-              {section}
-            </li>
-          )
-        )}
-      </ul>
+  {[
+    { label: "Home", id: "home" },
+    { label: "Meet the Perrins", id: "meetPerrins" },
+    { label: "Our Mission", id: "mission" },
+    { label: "The Plan", id: "plan" },
+    { label: "Resources", id: "resources" },
+    { label: "Join Us", id: "join" },
+    { label: "Contact Us", id: "contact" },
+  ].map(({ label, id }, index) => (
+    <li key={index} onClick={() => handleNavClick(id)}>
+      {label}
+    </li>
+  ))}
+</ul>
+
     </nav>
   );
 };

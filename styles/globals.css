@@ -37,6 +37,7 @@ body {
 
 body {
   font-family: 'Coco Pro Bold', 'Bebas Neue Pro Bold',Arial, sans-serif;
+  /* padding-top: 20vh; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -131,7 +132,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Coco Pro Bold', 'Bebas Neue Pro Bold',Arial, sans-serif;
   margin: 0.5em 0;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 p {
@@ -166,96 +167,4 @@ button:hover {
 
 
 
-
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--secondary-color);
-  /* color: var(--background-color); */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-}
-
-.navbar.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.navbar.hide {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.logo img {
-  height: 40px;
-  cursor: pointer;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  width: 30px;
-  height: 3px;
-  background-color: var(--foreground-color);
-}
-
-.navLinks {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.navLinks li {
-  cursor: pointer;
-  font-family: "Bebas Neue Pro Bold", sans-serif;
-  color: var(--foreground-color);
-  transition: color 0.2s;
-}
-
-.navLinks li:hover {
-  color: var(--primary-color);
-}
-
-.navLinks.open {
-  display: flex;
-}
-
-@media (max-width: var(--breakpoint-tablet)) {
-  .hamburger {
-    display: flex;
-  }
-
-  .navLinks {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .navLinks.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
 

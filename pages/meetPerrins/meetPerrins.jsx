@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
+import Parallelogram from "@/components/parallelogram/parallelogram";
 
-
-function MeetThePerrins() {
+function HomePage() {
   return (
     <flexcenter>
-      <h1>Meet The Perrins</h1>
+     
+      <Parallelogram width="300px" height="150px" color="#897349">
+      <h1>Meet the Perrins</h1>
+      </Parallelogram>
     </flexcenter>
   );
 }
 
-export default MeetThePerrins;
+export default HomePage;
