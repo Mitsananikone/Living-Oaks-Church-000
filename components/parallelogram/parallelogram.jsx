@@ -14,6 +14,7 @@ const Parallelogram = ({ width, height, color, top, left, children, backImage })
         backgroundImage:  backImage,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        zIndex: 1,
       }}
     >
       <div className={styles.content}>{children}</div>

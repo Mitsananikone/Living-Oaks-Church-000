@@ -1,0 +1,27 @@
+/* Flex container to align parallelogram and text */
+.contentRow {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between parallelogram and text */
+  }
+  
+  /* Parallelogram container */
+  .parallelogramContainer {
+    flex: 0 0 auto; /* Prevent it from stretching */
+  }
+  
+  /* Text container */
+  .textContainer {
+    flex: 1; /* Take remaining space */
+    max-width: 600px; /* Set max width for text area */
+    margin-left: 1000px
+  }
+  
+  /* Optional: Adjust paragraph style */
+  .textContainer p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+  }
+  

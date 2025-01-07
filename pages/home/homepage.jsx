@@ -4,8 +4,8 @@ import "@/styles/globals.css";
 
 function HomePage() {
   return (
-    <flexbox>
-    <div>
+    <flexcenter >
+    <div className="centerContainer" >
       {/* First Parallelogram */}
       <Parallelogram
         width="550px"
@@ -26,7 +26,7 @@ function HomePage() {
           <h1
             style={{
               color: "var(--secondary-color)",
-              fontSize: "2.5rem",
+              fontSize: "2.6rem",
               fontStyle: "normal",
             }}
           >
@@ -35,7 +35,7 @@ function HomePage() {
           <h1
             style={{
               color: "var(--secondary-color)",
-              fontSize: "2.5rem",
+              fontSize: "2.6rem",
               fontStyle: "normal",
             }}
           >
@@ -44,7 +44,7 @@ function HomePage() {
           <h1
             style={{
               color: "var(--secondary-color)",
-              fontSize: "2.5rem",
+              fontSize: "2.6rem",
               fontStyle: "normal",
             }}
           >
@@ -82,7 +82,7 @@ function HomePage() {
               marginTop: "40px",
             }}
           >
-            LEADING real People to find <br/> REAL hope in Jesus.
+            Leading REAL people to find <br/> REAL hope in Jesus.
           </h1>
         </div>
       </Parallelogram>
@@ -116,8 +116,9 @@ function HomePage() {
           
         </div>
       </Parallelogram>
+
     </div>
-    </flexbox>
+    </flexcenter>
   );
 }
 
